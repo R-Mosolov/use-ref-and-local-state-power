@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+  width: calc(365 * 51px);
+}
+
+.cell {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.clicked {
+  background-color: lightcoral;
+}
