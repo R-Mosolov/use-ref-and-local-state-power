@@ -1,21 +1,16 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { Container } from "./components/Container";
 import './styles/App.css';
 
 const App = () => {
-  const ref = useRef([]);
-  const contRef = useRef();
+  let data = [];
 
-  const logOutput = (ref) => console.log('ref.current', ref?.current);
-
-  useEffect(() => {
-    console.log('ref.current 2', ref?.current);
-  }, [ref?.current]);
+  const logOutput = (data) => console.log('data', data);
 
   return (
     <div className="App">
-      <button onClick={() => logOutput(ref)}>Показать измененные</button>
-      <Container ref={ref} contRef={contRef} />
+      <button onClick={() => logOutput(data)}>Показать измененные</button>
+      <Container data={data} />
     </div>
   );
 }
