@@ -1,7 +1,9 @@
+import { Container } from "./components/Container";
+
 const App = () => {
   return (
     <div className="App">
-      <h1>useRef Power</h1>
+      <Container />
     </div>
   );
 }
